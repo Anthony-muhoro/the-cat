@@ -1,6 +1,6 @@
 # The Cats Facts
 
-![Screenshot](./screenshot.png)
+![Screenshot](./images/screenshot.png)
 
 A lightweight web application that allows users to fetch random cat facts and cat photos using public APIs. Built using vanilla JavaScript with Axios and styled using custom CSS.
 
@@ -20,8 +20,7 @@ A lightweight web application that allows users to fetch random cat facts and ca
 - JavaScript (ES6+)
 - HTML & CSS
 - Axios for HTTP requests
-- Font Awesome (for icons)
-- Public APIs:
+- APIs I used:
   - [meowfacts.herokuapp.com](https://meowfacts.herokuapp.com/)
   - [thecatapi.com](https://thecatapi.com/)
 

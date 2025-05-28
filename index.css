@@ -7,6 +7,7 @@
   --primary-color: #fad0c4;
   --btn-color: #c599b6;
   --text-color: #000000;
+  --secondary-color: #fff7f3;
 }
 html {
   font-size: 62.5%;
@@ -70,6 +71,8 @@ span {
   background-color: white;
   text-align: center;
   border-radius: 0.8rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 ::placeholder {
   font-style: italic;
@@ -90,18 +93,29 @@ button {
   outline: none;
   cursor: pointer;
 }
-ol {
-  list-style-type: decimal;
-  padding: 2rem 5rem;
-  text-align: start;
+
+#displayResults {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  min-height: 35rem;
+  text-align: center;
+  background-color: var(--secondary-color);
 }
-.cats-results {
-  display: flex;
-  flex-direction: row;
+
+.facts-show {
+  max-width: 80rem;
+  width: 100%;
+  gap: 2rem;
 }
+
+.facts-show ol {
+  list-style-position: inside;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
 .loader {
   border-left: 2rem solid var(--btn-color);
   border-top: 2rem solid var(--primary-color);

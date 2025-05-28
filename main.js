@@ -26,7 +26,7 @@ factsBtn.addEventListener("click", async (e) => {
       })
       .join("");
 
-    displayResults.innerHTML = `<ol>${results}</ol>`;
+    displayResults.innerHTML = `<div class="facts-show"><ol>${results}</ol></div>`;
   } catch (error) {
     console.log("something went wrong", error);
   }
