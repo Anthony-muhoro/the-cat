@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-color:#fad0c4;
+    --btn-color:#c599b6;
+    --text-color:#000000;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+   font-size: 1.6rem;
+   font-family: "Poppins", sans-serif;
+}
