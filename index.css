@@ -25,6 +25,7 @@ body {
   background-color: var(--primary-color);
   align-items: center;
   padding: 4rem 0;
+  flex-wrap: wrap;
 }
 .app-hero h1 {
   font-size: 4rem;
@@ -33,12 +34,14 @@ body {
 .forms-section {
   display: flex;
   padding: 2rem 3rem;
+  flex-wrap: wrap;
 }
 form {
   display: flex;
   width: 100%;
   gap: 10rem;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .cat-photo-form,
@@ -47,6 +50,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 h3 {
   text-transform: capitalize;
@@ -55,6 +59,7 @@ span {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 #photosNo,
 #factsNo {
@@ -83,4 +88,62 @@ button {
   padding: 1rem 2rem;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+ol {
+  list-style-type: decimal;
+  padding: 2rem 5rem;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cats-results {
+  display: flex;
+  flex-direction: row;
+}
+.loader {
+  border-left: 2rem solid var(--btn-color);
+  border-top: 2rem solid var(--primary-color);
+  border-right: 2rem solid var(--btn-color);
+  border-bottom: 2rem solid var(--primary-color);
+  border-radius: 50%;
+  width: 22rem;
+  height: 22rem;
+  animation: spin 2s linear infinite;
+  margin: 1.5rem auto;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem;
+}
+
+.image-container {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 48em) {
+  #photosNo,
+  #factsNo {
+    width: 100%;
+  }
 }
