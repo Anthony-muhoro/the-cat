@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,6 +14,39 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="app">
+      <div class="app-hero">
+        <h1>The Cats App</h1>
+        <div class="forms-section">
+          <form>
+            <div class="cat-facts-form">
+              <h3>number of cats facts (50 maximum)</h3>
+              <span>
+                <input
+                  type="number"
+                  placeholder="number of cats facts (50 max)"
+                  id="factsNo"
+                />
+                <button>submit</button>
+              </span>
+            </div>
+            <div class="cat-photo-form">
+              <h3>number of cats photos (10 max)</h3>
+              <span>
+                <input
+                  type="number"
+                  placeholder="number of cats photos (10 max)"
+                  id="photosNo"
+                />
+                <button>submit</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="cats-results"></div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
